@@ -16,15 +16,14 @@
   },
   "scripts": {
     "start": "cds-serve",
-    "dev": "PORT=4004 cds watch"
+    "dev": "cds watch"
   },
   "cds": {
     "requires": {
       "db": {
         "kind": "sqlite",
-        "model": ["db", "srv"],
         "credentials": {
-          "database": "sqlite.db"
+          "url": "db/my-bookshop.sqlite"
         }
       }
     }
