@@ -20,9 +20,8 @@
     "requires": {
       "db": {
         "kind": "sqlite",
-        "model": ["db", "srv"],
         "credentials": {
-          "database": "sqlite.db"
+          "url": "db/data/my-customers.db"
         }
       }
     }
