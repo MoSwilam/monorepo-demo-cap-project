@@ -1,0 +1,30 @@
+{
+  "name": "service2",
+  "version": "1.0.0",
+  "description": "Order management service for CAP project.",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/eslint-plugin-cds": "^3",
+    "eslint": "^9"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "dev": "cds watch"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "model": ["db", "srv"],
+        "credentials": {
+          "database": "sqlite.db"
+        }
+      }
+    }
+  }
+}

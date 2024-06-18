@@ -2,5 +2,18 @@
   "name": "my-cap-monorepo",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "packages/services/*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "lerna": "^8.1.3"
+  },
+  "scripts": {
+    "start:service1": "cd packages/services/service1 && yarn run start",
+    "start:service2": "cd packages/services/service2 && yarn run start"
+  }
 }
