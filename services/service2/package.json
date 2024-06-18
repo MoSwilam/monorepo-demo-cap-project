@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "cds-serve",
-    "dev": "cds watch"
+    "dev": "PORT=4005 cds watch"
   },
   "cds": {
     "requires": {
